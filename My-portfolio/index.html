@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -14,19 +20,37 @@
         <nav>
             <h2>MyPortfolio</h2>
             <ul>
-                <li>
+                <li class="headerbar">
                     <a href="#top">Home</a>
                 </li>
-                <li>
+                <li class="headerbar">
                     <a href="#projects">Projects</a>
                 </li>
-                <li>
+                <li class="headerbar">
                     <a href="#about-me"> About me</a>
                 </li>
-                <li>
+                <li class="headerbar">
                     <a href="#footer"> Contact</a>
                 </li>
             </ul>
+            <!-- under 1000 -->
+            <li class='bars'>
+                <i class="fa-solid fa-bars fa-xl"></i>
+                <ul class="dropdown" id="dropdown">
+                    <li class="link1">
+                        <a href="#top">Home</a>
+                    </li>
+                    <li class="link1">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="link1">
+                        <a href="#about-me"> About me</a>
+                    </li>
+                    <li class="link1">
+                        <a href="#footer"> Contact</a>
+                    </li>
+                </ul>
+            </li>
         </nav>
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -72,18 +96,30 @@
                     <img src="./images/1-web.png" alt="">
                     <div class="card-content">
                         <h3>Travel Website</h3>
-                        <p> Created as a project that includes travel places and provides information
+                        <p>
+                            <!-- Created as a project that includes travel places and provides information
                             about them.
                             <br>
                             Utilized <small style="color: black;font-size: 14px;font-weight: bold;">Html, CSS,
                                 Javascript</small> to
                             create an
                             intuitive
-                            and visually appealing website.
+                            and visually appealing website. -->
+                            This project is born out of a passion for discovering travel destinations and sharing
+                            comprehensive insights about them.
+                            <br>
+                            It features an intuitive and visually appealing website crafted with <small
+                                style="color: black;font-size: 14px;font-weight: bold;">HTML</small>,
+                            <small style="color: black;font-size: 14px;font-weight: bold;">CSS</small>,
+                            and <small style="color: black;font-size: 14px;font-weight: bold;">JavaScript</small>.
                         </p>
                         <div class="wrap">
-                            <a href="#" class="bt">Live Demo ></a>
-                            <a href="https://github.com/Figensoftware/Website" class="bt" target="_blank">GitHub ></a>
+                            <a href="#" class="bt">Live Demo
+                                <bigg class="arrow">></bigg>
+                            </a>
+                            <a href="https://github.com/Figensoftware/Website" class="bt" target="_blank">GitHub
+                                <bigg class="arrow">></bigg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -91,21 +127,43 @@
                     <img src="./images/zodiac-signn.png" alt="">
                     <div class="card-content">
                         <h3>Zodiac Sign</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Inventore sint nam voluptates.</p>
+                        <p>
+                            <!-- An interactive web application that provides personalized
+                            information based on the user's birth date. It dynamically calculates the user's zodiac
+                            sign, age, and astrological characteristics. Built with
+                            <small style="color: black; font-size: 14px; font-weight: bold;">HTML</small>,
+                            <small style="color: black; font-size: 14px; font-weight: bold;">CSS</small>, and
+                            <small style="color: black; font-size: 14px; font-weight: bold;">JavaScript</small>,
+                            Zodiac Sign offers an engaging user experience with its intuitive design and dynamic
+                            functionality. -->
+                            This interactive web application crafted with
+                            <small style="color: black; font-size: 14px; font-weight: bold;">HTML</small>,
+                            <small style="color: black; font-size: 14px; font-weight: bold;">CSS</small>, and
+                            <small style="color: black; font-size: 14px; font-weight: bold;">JavaScript</small>.
+                            It provides personalized insights based on the user's birth date.
+                            It dynamically calculates the user's zodiac sign, age, and astrological
+                            characteristics.
+                            <br>
+                            It offers an engaging user experience with its dynamic
+                            functionality.
+
+                        </p>
                         <div class="wrap">
-                            <a href="#" class="bt">Live Demo ></a>
+                            <a href="#" class="bt">Live Demo
+                                <bigg class="arrow">></bigg>
+                            </a>
                             <a href="https://github.com/Figensoftware/Zodiac-Sign" class="bt" target="_blank">GitHub
-                                ></a>
+                                <bigg class="arrow">></bigg>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./images/project-creationn.png" alt="">
                     <div class="card-content">
-                        <h3>Project Creation</h3>
+                        <h3>Project Creator</h3>
                         <p>
-                            Developed a web-based solution to streamline project initiation and management.
+                            <!-- Developed a web-based solution to streamline project initiation and management.
                             <br>
                             Implemented Git for version control to facilitate team collaboration and maintain code
                             integrity.
@@ -114,40 +172,74 @@
                             <small style="color: black;font-size: 14px;font-weight: bold;"> HTML, Tailwind CSS,
                                 JavaScript, and the React framework </small>
                             to develop an intuitive
-                            and responsive design.
+                            and responsive design. -->
+                            This project introduces a web-based solution for project initiation and management.
+                            <br>
+                            The project is developed using
+                            <small style="color: black; font-size: 14px; font-weight: bold;">HTML</small>,
+                            <small style="color: black; font-size: 14px; font-weight: bold;">JavaScript</small>, and
+                            <small style="color: black; font-size: 14px; font-weight: bold;">React</small>
+                            for a responsive and intuitive design,
+                            styled with <small style="color: black; font-size: 14px; font-weight: bold;">Tailwind
+                                CSS</small>.
+                            <br>
+                            Git is utilized for version control and team collaboration, ensuring code integrity.
 
                         </p>
                         <div class="wrap">
-                            <a href="#" class="bt">Live Demo ></a>
+                            <a href="#" class="bt">Live Demo
+                                <bigg class="arrow">></bigg>
+                            </a>
                             <a href=" https://github.com/Figensoftware/Project-Creater" class="bt"
-                                target="_blank">GitHub ></a>
+                                target="_blank">GitHub
+                                <bigg class="arrow">></bigg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="./images/schooll.png" alt="">
+                    <img src="./images/webtea.png" alt="">
                     <div class="card-content">
-                        <h3>School Project</h3>
+                        <h3>Garden-to-Cup Tea</h3>
                         <p>
-                            Created dynamic and responsive UI components for the
+                            <!-- Created dynamic and responsive UI components for the
                             <small style="color: black;font-size: 14px;font-weight: bold;">"Join Us"</small> and
                             <small style="color: black;font-size: 14px;font-weight: bold;">"Footer"</small>
                             sections utilizing <small style="color: black;font-size: 14px;font-weight: bold;">Html, CSS,
                                 React</small>
                             Participated collaboratively in a developer team to meet project milestones effectively.
                             <br>
-                            Managed version control and project workflow efficiently using Git.
+                            Managed version control and project workflow efficiently using Git. -->
+
+                            This project is a sleek e-commerce platform built with
+                            <small style="color: black; font-size: 14px; font-weight: bold;">React</small>,
+                            <small style="color: black; font-size: 14px; font-weight: bold;">Vite</small>, and
+                            <small style="color: black; font-size: 14px; font-weight: bold;">Redux Toolkit</small>.
+                            It features a responsive <small
+                                style="color: black; font-size: 14px; font-weight: bold;">Material-UI</small> design,
+                            seamless <small style="color: black; font-size: 14px; font-weight: bold;">React
+                                Router</small> navigation,
+                            and persistent favorites and cart with <small
+                                style="color: black; font-size: 14px; font-weight: bold;">local storage</small>.
+                            and
+                            secure authentication. Styled with
+                            <small style="color: black; font-size: 14px; font-weight: bold;">CSS</small>.
+
                         </p>
                         <div class="wrap">
-                            <a href="#" class="bt">Live Demo ></a>
+                            <a href="#" class="bt">Live Demo
+                                <bigg class="arrow">></bigg>
+                            </a>
                             <a href="https://github.com/Uludag-Uni-YazilimToplulugu-Website/website" class="bt"
-                                target="_blank">GitHub ></a>
+                                target="_blank">GitHub
+                                <bigg class="arrow">></bigg>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./images/1-web.png" alt="">
+                    <img src="./images/phoenix.png" alt="">
                     <div class="card-content">
                         <h3>
                             New project
@@ -156,7 +248,7 @@
                         </h3>
                         <p>
 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, Lorem ipsum dolor sit amet
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, Loramet
                             consectetur adipisicing elit. Inventore sint nam voluptates.
                             <br>
                             Lorem ipsum dolor sit amet
@@ -166,8 +258,12 @@
                         </p>
 
                         <div class="wrap">
-                            <a href="#" class="bt">Live Demo ></a>
-                            <a href="#" class="bt">GitHub ></a>
+                            <a href="#" class="bt">Live Demo
+                                <bigg class="arrow">></bigg>
+                            </a>
+                            <a href="#" class="bt">GitHub
+                                <bigg class="arrow">></bigg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -223,6 +319,20 @@
     <script src="smooth-scroll.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
+
+        const bars = document.querySelector(".bars");
+        const dropdown = document.querySelector(".dropdown");
+
+        function getOpenBar() {
+            dropdown.style.display = dropdown.style.display === "none" || dropdown.style.display === "" ? "block" : "none";
+        }
+
+        // Initial state should be closed
+        dropdown.style.display = "none";
+
+        bars.addEventListener('click', getOpenBar);
+
+
     </script>
 </body>
 
