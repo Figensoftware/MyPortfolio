@@ -1,4 +1,4 @@
 # MyPortfolio
-[myprojectlink](https://figenportfolio.netlify.app/)
+[myportfoliolink](https://figenportfolio.netlify.app/)
 
 ![figenportfolio](./My-portfolio/figenportfolio.png) 
